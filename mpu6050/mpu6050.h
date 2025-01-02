@@ -36,7 +36,7 @@ namespace bbb
     public:
         explicit mpu6050(int scale = 0);
 
-        // mpu6050(const mpu6050 &) = delete;               // implicitly declared because of I2Cdevice 
+        // mpu6050(const mpu6050 &) = delete;               // implicitly declared deleted because of I2Cdevice 
         // mpu6050 &operator=(const mpu6050 &) = delete;
 
         void read_acc();
