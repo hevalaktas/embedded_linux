@@ -6,8 +6,6 @@
  *  Author               : Heval Aktaş
  *  Email                : hevalakts@gmail.com
  */
-#include "gpio.h"
-#include "pwm.h"
 #include "dc_motor.h"
 
 #include <iostream>
