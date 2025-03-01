@@ -1,5 +1,5 @@
 /*
- *  Description          : Simple DC Motor testing.
+ *  Description          : Simple DC Motor test
  *  physical environment : DRV8833 Dual H-Bridge Motor Driver and DC Motor
  *  License              : MIT License
  *  Created on           : 2025
@@ -13,12 +13,11 @@
 #include <iomanip>
 
 /*
-Beaglebone black    -->    DRV8833
+    Beaglebone black    -->    DRV8833
 
-gpio60      P9_12   -->    stby
-gpio116     P9_41   -->    AIN2
-PWM         P9_16   -->    AIN1
-
+    gpio60      P9_12   -->    stby
+    gpio116     P9_41   -->    AIN2
+    PWM         P9_16   -->    AIN1
 */
 
 int main()
