@@ -81,7 +81,7 @@ namespace bbb
 
         static ssize_t send(int sock_fd, const char *data, ssize_t size)
         {
-            int result = ::send(sock_fd, data, size, 0);
+            ssize_t result = ::send(sock_fd, data, size, 0);
             if (result == -1)
                 return errno == EAGAIN ? -1 : 0;
             if (result == 0)
