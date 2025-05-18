@@ -231,7 +231,7 @@ namespace bbb
                     else
                     {
                         int ret = event_handler(i);
-                        if (ret == -EAGAIN)
+                        if (ret == -1)
                         {
                             std::cout << "no data : " << poll_fd[i].fd << '\n';
                         }
