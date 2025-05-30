@@ -1,6 +1,6 @@
 /*
  *  Description          : Simple DC Motor test
- *  physical environment : DRV8833 Dual H-Bridge Motor Driver and DC Motor
+ *  Physical environment : DRV8833 Dual H-Bridge Motor Driver and DC Motor
  *  License              : MIT License
  *  Created on           : 2025
  *  Author               : Heval Aktaş
