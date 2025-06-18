@@ -1,0 +1,46 @@
+#!/bin/sh +x
+#
+
+export PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin
+
+mount -t proc   proc   /proc
+mount -t sysfs  sysfs  /sys
+mount -t tmpfs -o mode=1777 tmpfs  /tmp 
+
+mkdir /dev/pts
+mount -t devpts -o gid=5,mode=620 devpts /dev/pts 
+
+mkdir /dev/shm
+mount -t tmpfs -o mode=0777 tmpfs /dev/shm 
+
+mount -t tmpfs -o mode=0755,nosuid,nodev tmpfs /var 
+mkdir /var/cache
+mkdir /var/lock
+mkdir /var/log
+mkdir /var/run
+mkdir /var/spool
+mkdir /var/tmp
+
+echo "nameserver 8.8.8.8" > /etc/resolv.conf
+
+mdev -s
+
+hostname -F /etc/hostname
+
+syslogd 
+klogd
+
+ifconfig lo 127.0.0.1 up 
+route add -net 127.0.0.0 netmask 255.0.0.0 gw 127.0.0.1 lo 
+
+# static ip
+#
+ifconfig eth0 192.168.1.100 up
+route add default gw 192.168.1.1
+
+# dynamic ip
+#
+# udhcpc -s /etc/udhcpc.script
+
+telnetd
+

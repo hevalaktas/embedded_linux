@@ -1,0 +1,9 @@
+# /etc/inittab
+#
+::sysinit:/etc/rcS
+
+::respawn:/sbin/getty -L ttyS0 115200 vt100
+
+::shutdown:/bin/sync
+::shutdown:/bin/umount -a -r
+
