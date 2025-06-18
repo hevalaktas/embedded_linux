@@ -1,4 +1,3 @@
-U-Boot 2024.10-01035-g98a36deb9ab7 (Nov 02 2024 - 03:02:54 +0300)
 
 CPU  : AM335X-GP rev 2.1
 Model: TI AM335x BeagleBone Black
