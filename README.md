@@ -1,4 +1,5 @@
 
-I share the Embedded Linux topics have learned and the C++ codes have written for reference.
+![bbb_linux](https://github.com/user-attachments/assets/c8197bd4-1d01-4921-9993-11e22048d4d4)
 
-![HevalLinux](https://github.com/user-attachments/assets/4ec2f707-e4bb-4d4d-9be0-15ffd90c6512)
+For any feedback please contact me.
+email : hevalakts@gmail.com 
